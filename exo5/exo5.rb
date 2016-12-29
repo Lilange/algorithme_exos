@@ -15,5 +15,21 @@ mots = gets.chomp
  end
  puts "oui"
 
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+mot = "to_to"
+combienYadeLettre = 0
+i = 0
+j = 0
 
- 
+while i < mot.length
+    while j < alphabet.length
+        if alphabet[j] == mot[i]
+            combienYadeLettre+=1
+            break
+        end
+        j+=1
+    end
+    j=0
+    i+=1
+end
+print "il y a "+combienYadeLettre.to_s + " lettre(s) de l'alphabet dans "+ mot  
