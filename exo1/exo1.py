@@ -1,3 +1,7 @@
-# Hello, world!
+#Test de la sortie standard en python
+#by sebastien
+#beweb
 
-print('Hello, world!')
+
+salut = "hello world"
+print salut
